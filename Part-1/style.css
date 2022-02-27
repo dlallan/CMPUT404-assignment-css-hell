@@ -1,0 +1,65 @@
+body {
+    background-image: linear-gradient(rgb(212, 190, 157), rgb(241, 234, 166));
+}
+
+hr {
+    border: 0.01rem solid black;
+}
+
+/* Table of Contents style */
+table {
+    margin: 1.5rem auto;
+    text-align: justify;
+}
+
+/* Book body text style */
+p {
+    font-family: Georgia, 'Times New Roman', serif;
+    letter-spacing: .1rem;
+    text-align: justify;
+    margin: 1.5rem 3rem;
+}
+
+/* Chapter title style */
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+h2 {
+    font-family: 'Garamond', serif;
+    font-size: xx-large;
+    letter-spacing: .15rem;
+    margin-top: 5%;
+}
+
+/* First letter in chapters */
+span.dropcap {
+    font-size: 2.5em;
+}
+
+/* Figure style */
+div.fig {
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+div.fig>img {
+    border: solid black;
+}
+
+/* Figure caption style */
+h5 {
+    margin-top: 0.3%;
+    margin-bottom: 3rem;
+}
+a {
+    text-align: center;
+    font-size: small;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: darkred;
+}
+a:hover {
+    color: red;
+}
