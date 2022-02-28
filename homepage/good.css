@@ -1,0 +1,130 @@
+/* 
+Top banner image and text style inspired by 
+"How TO - Her Image" by w3schools, https://www.w3schools.com/howto/howto_css_hero_image.asp, accessed 2022-02-27.
+*/
+body, html {
+    height: 100%;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+body {
+    width: 75rem;
+    margin: 0 auto;
+    background-image: linear-gradient(rgb(221, 221, 221), rgb(102, 102, 102));
+    vertical-align: middle;
+    /* position: */
+}
+.header-image {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("banner.jpg");
+    height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/*
+navbar style inspired by 
+"CSS Horizontal Navigation Bar", w3schools, https://www.w3schools.com/css/css_navbar_horizontal.asp, accessed 2022-02-07.
+*/
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: darkred;
+}
+
+/* Who am I style */
+#Who-am-I {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#portrait {
+    grid-column-start: 1;
+}
+#portrait>img {
+    border-radius: 50%;
+    border: solid black;
+    height: 12rem;
+}
+#About-me {
+    grid-column-start: 2;
+}
+#Important-Points {
+    background-color: rgba(0,0,0,0.5);
+    grid-column-start: 3;
+    padding: 0.25rem;
+    text-align: justify;
+    font-size: large;
+}
+#Important-Points strong {
+    font-size: larger;
+}
+
+/* Professional Experience style */
+#Professional-Experience {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 3rem repeat(2, 1rem) 8rem repeat(2, 1rem) 8rem;
+    gap: 1rem;
+    padding: 1rem;
+}
+.Professional-Experience-title {
+    grid-column: 1 / end;
+}
+.company {
+    grid-column: 1 / 1;
+    height: 2rem;
+}
+.date-range-served {
+    grid-column: 2 / end;
+    text-align: end;    
+}
+.position {
+    grid-column: 1 / 1;
+    font-style: italic;
+}
+.location {
+    grid-column: 2 / end;
+    text-align: end;
+    font-style: italic;
+}
+.position-details {
+    grid-column: 1 / end;
+}
+
+/* What I Offer style */
+#What-I-Offer {
+    padding: 1rem;
+}
