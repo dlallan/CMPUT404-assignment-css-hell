@@ -3,13 +3,12 @@ Top banner image and text style inspired by
 "How TO - Her Image" by w3schools, https://www.w3schools.com/howto/howto_css_hero_image.asp, accessed 2022-02-27.
 */
 body, html {
-    height: 100%;
     background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
 body {
-    width: 75rem;
+    width: 90%;
     margin: 0 auto;
     background-image: linear-gradient(rgb(221, 221, 221), rgb(102, 102, 102));
     vertical-align: middle;
@@ -17,7 +16,7 @@ body {
 }
 .header-image {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("banner.jpg");
-    height: 20%;
+    height: 20rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,8 +61,19 @@ li a:hover {
     background-color: darkred;
 }
 
+/* Main content style */
+.main-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+}
+
 /* Who am I style */
 #Who-am-I {
+    grid-row-start: 1;
+
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1rem;
@@ -81,19 +91,11 @@ li a:hover {
 #About-me {
     grid-column-start: 2;
 }
-#Important-Points {
-    background-color: rgba(0,0,0,0.5);
-    grid-column-start: 3;
-    padding: 0.25rem;
-    text-align: justify;
-    font-size: large;
-}
-#Important-Points strong {
-    font-size: larger;
-}
 
 /* Professional Experience style */
 #Professional-Experience {
+    grid-row-start: 2;
+
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 3rem repeat(2, 1rem) 8rem repeat(2, 1rem) 8rem;
@@ -126,5 +128,18 @@ li a:hover {
 
 /* What I Offer style */
 #What-I-Offer {
+    grid-row-start: 3;
     padding: 1rem;
+}
+
+#Important-Points {
+    grid-column-start: 2;
+    grid-row: 1 / end;
+    background-color: #333;
+    padding: 1rem;
+    text-align: justify;
+    font-size: large;
+}
+#Important-Points strong {
+    font-size: larger;
 }
