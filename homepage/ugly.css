@@ -142,7 +142,7 @@ li a:hover {
 #Important-Points {
     grid-column-start: 2;
     grid-row: 1 / end;
-    background-color: #333;
+    background-color: cornsilk;
     padding: 1rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: justify;
